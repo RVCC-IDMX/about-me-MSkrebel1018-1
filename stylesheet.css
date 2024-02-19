@@ -1,10 +1,43 @@
-.hero{
+.hero {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
+    font-family: "Source Code Pro";
+    color: #29ABC2;
 }
 
-.info{
+.info {
     margin-left: 200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat;
+}
+
+header {
+    text-align: center;
+    color: #29ABC2;
+    border: 2px solid #02CEF4;
+    background-color: #38565C;
+}
+
+header img {
+    width: 300px;
+    height: 300px
+}
+
+body {
+    background-color: #293233;
+}
+
+.info {
+    color: #3B828F;
+}
+
+footer {
+    color: #02CEF4;
+    border: 2px solid #02CEF4;
+    padding: 10px;
+    background-color: #38565C;
 }
