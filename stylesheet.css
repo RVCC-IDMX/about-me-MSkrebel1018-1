@@ -9,10 +9,13 @@
 
 .info {
     margin-left: 200px;
+    color: #3B828F;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat;
+    color:#02CEF4;
+    text-align: center;
 }
 
 header {
@@ -31,9 +34,21 @@ body {
     background-color: #293233;
 }
 
-.info {
-    color: #3B828F;
+#hobbies ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+#hobbies ul li {
+    flex: 1 1 200px; 
+    margin: 20px;
+    padding: 15px;
+    color: #29ABC2;
+    text-align: center;
+}
+
 
 footer {
     color: #02CEF4;
