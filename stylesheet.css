@@ -11,11 +11,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat;
     color:#02CEF4;
     text-align: center;
+    font-size: 35px;
 }
 
 header img {
     width: 300px;
-    height: 300px
+    height: 300px;
 }
 
 /* Body */
@@ -28,10 +29,7 @@ body {
 /* Bio */
 
 .hero {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
+    text-align: center;
     font-family: "Source Code Pro";
     color: #29ABC2;
 }
@@ -39,27 +37,30 @@ body {
 
 /* Info */
 
+
+
 .info {
-    margin-left: 200px;
+    text-align: center;
     color: #3B828F;
 }
 
+.info img {
+    width: 350px;
+    height: 350px;
+}
 
 /* Hobbies */
 
-#hobbies ul {
-    padding: 0;
-    margin: 0;
+#hobbies {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-#hobbies ul li {
-    flex: 1 1 200px; 
-    margin: 20px;
-    padding: 15px;
-    color: #29ABC2;
-    text-align: center;
+#hobbies ul {
+    padding: 0;
+    margin: 5;
+    color: #3B828F;
 }
 
 
@@ -106,6 +107,22 @@ body {
     float: left;
     line-height: .5;
     font-size: 3em;
+}
+
+/* media */
+
+@media screen and (min-width: 60em) {
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
 }
 
 /* Footer */
