@@ -118,9 +118,51 @@ body {
 
 #formElements {
     display:grid;
-    color:#02CEF4;
+    row-gap: .5em;
 }
 
+#contact {
+    color:#02CEF4;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #3B828F;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 2rem;
+}
+
+legend {
+    background-color: #3B828F;
+    color: white;
+    padding: .5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li {
+    margin: 1em;
+}
+
+#contact button {
+    background-color: #3B828F;
+    color: white;
+    border: 1px solid #3B828F;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+}
 
 /* tablet size */
 
