@@ -114,6 +114,14 @@ body {
     margin-bottom: 20px;
 }
 
+/* Contact Form */
+
+#formElements {
+    display:grid;
+    color:#02CEF4;
+}
+
+
 /* tablet size */
 
 @media screen and (min-width: 60em) {
