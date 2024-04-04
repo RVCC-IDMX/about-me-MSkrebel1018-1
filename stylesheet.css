@@ -39,12 +39,12 @@ body {
 
 
 
-.info {
+#info {
     text-align: center;
     color: #3B828F;
 }
 
-.info img {
+#info img {
     width: 350px;
     height: 350px;
 }
