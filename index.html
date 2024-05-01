@@ -32,6 +32,7 @@
                     <li><a href="#info">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#lit">Blog</a></li>
+                    <li><a href="#animation">Animation</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
@@ -44,7 +45,7 @@
         <section id="info">
             <!-- Info Section -->
 
-            <img src="img/avataaars.png" alt="My avatar">
+            <img src="img/logo2.0.png" alt="Logo">
 
             <div>
                 <p>Michael Skrebel</p>
@@ -83,34 +84,21 @@
         </section>
 
         <section id="gallery">
-
             <h2>Photo Gallery</h2>
-
             <hr>
-
-            <figure>
+            <figure class="gallery"> 
                 <img src="img/waterfall-640w.jpg" alt="Waterfall">
-                <figcaption>
-                    Niagara Falls
-                </figcaption>
+                <figcaption>Niagara Falls</figcaption>
             </figure>
-
             <hr>
-
-            <figure>
+            <figure class="gallery"> 
                 <img src="img/bridge-640w.jpg" alt="bridge">
-                <figcaption>
-                    Bridge 
-                </figcaption>
+                <figcaption>Bridge</figcaption>
             </figure>
-
             <hr>
-
-            <figure>
+            <figure class="gallery"> 
                 <img src="img/rainbow-640w.jpg" alt="Rainbow">
-                <figcaption>
-                    Rainbow Under Niagara Falls
-                </figcaption>
+                <figcaption>Rainbow Under Niagara Falls</figcaption>
             </figure>
         </section>
 
@@ -134,6 +122,42 @@
                 <p>"My God! It's Watson," said he. He was in a pitiable state of reaction, with every nerve in a twitter. "I say, Watson, what o'clock is it?"</p>
 
                 <p>"Nearly eleven."</p>
+
+            </div>
+
+
+        </article>
+
+        <article id="animation">
+
+            <h2>Rotating Images </h2>
+
+            <div>
+                <p>I knew from the beginning I wanted to add some sort of rotation into my website to keep users engaged and create a more dynamic browsing experience. 
+                    I also wanted to incorporate a hover effect with this. In order to do this I started with messing around with the html I already had and tried just adding css. 
+                    But I came to realize that, that wasn't working so I went back and changed my html around in order to keep the styling effects that I previously had. 
+                    I kept the section ID "gallery" to contain the images, within this section I used the 'figure' element to represent each image along with its caption. 
+                    And each figure element will have a class attribute of "gallery" to apply the rotation effect. 
+                </p>
+
+                <p>Next in the CSS styles, I targeted the 'gallery' class, which is applied to each 'figure' element containing an image. And I set the 'position' properly to 
+                    'relative' to establish a positioning context for the image within its container. The 'display' prperty is set to 'inline-block' to ensure that the 
+                    container respects its dimensions while allowing other elements to flow around it. 
+                </p>
+
+                <img src="img/gallery.png" alt="gallery">
+
+                <p>I then target the 'img' elements inside the 'gallery' containers and specify a transition for the 'transform' property, which controls the rotation animation. 
+                    The transition duration is set to '1s' to create a smooth effect, and the timing function is set to 'ease' for a gradual acceleration and deceleration. 
+                </p>
+
+                <img src="img/gallery img.png" alt="gallery img">
+
+                <p>Finally I defined the hover state for the 'gallery' class. So when a user hovers over an image, we see a rotation transformation using the 'transform' property.
+                    I use the 'rotate()' function to specify the amount of rotation, in this case, '360deg' is for a full clockwise rotation.
+                </p>
+
+                <img src="img/gallery hover.png" alt="gallery hover">
 
             </div>
 

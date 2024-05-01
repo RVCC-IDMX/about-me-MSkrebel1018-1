@@ -81,6 +81,23 @@ body {
 }
 
 
+
+/* Gallery Images rotating on hover */
+
+.gallery {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery img {
+    transition: transform 1s ease;
+}
+
+.gallery:hover img {
+    transform: rotate(360deg);
+}
+
+
 /* Lit */
 
 #lit {
@@ -108,6 +125,37 @@ body {
     line-height: .5;
     font-size: 3em;
 }
+
+
+/* animation */
+
+#animation {
+    border: 2px solid #29ABC2;
+    margin-bottom: 2rem;
+    color: #3B828F;
+}
+
+#animation div {
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    font-family: "Source Code Pro";
+}
+
+#animation div p {
+    padding: 0.3rem 0;
+}
+
+#animation div p:first-of-type::first-letter {
+    border: 3px solid #38565C;
+    padding: .2em;
+    margin-right:.2em;
+    float: left;
+    line-height: .5;
+    font-size: 3em;
+}
+
+/* video */
 
 #video {
     text-align: center;
